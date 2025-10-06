@@ -1,9 +1,33 @@
+:root {
+  --surface: 255 255 255;
+  --on-surface: 15 23 42;
+  --muted: 100 116 139;
+  --accent: 99 102 241;
+  --radius: 12px;
+  --transition-fast: 160ms;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --surface: 11 12 13;
+    --on-surface: 220 224 230;
+    --muted: 148 163 184;
+    --accent: 96 165 250;
+  }
+}
+html.dark {
+  --surface: 11 12 13;
+  --on-surface: 220 224 230;
+  --muted: 148 163 184;
+}
+
 body {
-  font-family: "Inter";
-  color: white;
-  background-image: url(images/background.jpg);
-  background-size: cover;
-  background-color: #095693;
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: rgb(var(--surface));
+  color: rgb(var(--on-surface));
+  background-image: radial-gradient(rgb(41, 41, 41) 1px, transparent 0);
+  background-size: 40px 40px;
+  background-position: -19px -19px;
 }
 
 header {
@@ -13,7 +37,7 @@ header {
 
 section {
   flex: 1 0 0;
-  margin: 10px;
+  margin: 5px;
 }
 
 h1 {
@@ -21,16 +45,31 @@ h1 {
 }
 
 .container {
+  max-width: 900px;
+  margin: 48px auto;
+  padding: 24px;
+  display: grid;
+}
+
+.flex {
   display: flex;
   flex-wrap: wrap;
 }
 
-.glass {
-  background-color: rgba(0, 0, 0, 0.15);
-  backdrop-filter: blur(5px) url(#distortion);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.4);
+.card {
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(5px);
+  padding: 18px;
+  border-radius: var(--radius);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+}
 
-  border-radius: 30px;
-  padding: 20px;
+.btn {
+  background: rgb(var(--accent));
+  color: white;
+  padding: 0.6rem 0.9rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
 }
