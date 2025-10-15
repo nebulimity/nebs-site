@@ -65,6 +65,12 @@ footer {
   padding-bottom: 40px;
 }
 
+hr {
+  border: 0px dashed rgb(41, 41, 41);
+  max-width: 600px;
+  margin-bottom: 50px;
+}
+
 h1 {
   text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.4);
 }
@@ -83,6 +89,13 @@ h1 {
   margin: 48px auto;
   padding: 24px;
   display: grid;
+}
+
+.center {
+  max-width: 900px;
+  margin: 48px auto;
+  padding: 24px;
+  text-align: center;
 }
 
 .flex {
@@ -143,4 +156,8 @@ h1 {
   justify-content: center;
   line-height: 1;
   margin-left: 10px;
+}
+
+.button:hover {
+  box-shadow: 0 0px 18px rgb(var(--accent));
 }
