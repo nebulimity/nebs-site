@@ -7,14 +7,6 @@
   --transition-fast: 160ms;
   --nav: 60px;
 }
-@media (prefers-color-scheme: dark) {
-  :root {
-    --surface: 11 12 13;
-    --on-surface: 220 224 230;
-    --muted: 148 163 184;
-    --accent: 96 165 250;
-  }
-}
 html.dark {
   --surface: 11 12 13;
   --on-surface: 220 224 230;
@@ -138,7 +130,7 @@ h1 {
   backdrop-filter: blur(5px);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
   border: 1px solid rgba(255, 255, 255, 0.03);
-  color: white;
+  color: rgb(var(--on-surface));
   padding: 0.8rem 0.9rem;
   border-radius: 50px;
   text-decoration: none;
@@ -153,7 +145,7 @@ h1 {
   backdrop-filter: blur(5px);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
   border: 1px solid rgba(255, 255, 255, 0.03);
-  color: white;
+  color: rgb(var(--on-surface));
   padding: 0.8rem 0.9rem;
   border-radius: 10px;
   text-decoration: none;
@@ -168,4 +160,44 @@ h1 {
 
 .button:hover {
   box-shadow: 0 0px 18px rgb(var(--accent));
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --surface: 11 12 13;
+    --on-surface: 220 224 230;
+    --muted: 148 163 184;
+    --accent: 96 165 250;
+  }
+}
+
+@media print {
+  body {
+    background-size: 0;
+    text-shadow: none;
+  }
+  nav {
+    display: none !important;
+  }
+
+  .card,
+  .button-dark {
+    border: solid 1px black;
+  }
+
+  :root {
+    --surface: 255 255 255;
+    --on-surface: 15 23 42;
+    --muted: 100 116 139;
+    --accent: 99 102 241;
+    --radius: 12px;
+    --transition-fast: 160ms;
+    --nav: 60px;
+  }
+}
+
+@media (max-width: 660px) {
+  .big-text {
+    font-size: 80px;
+  }
 }

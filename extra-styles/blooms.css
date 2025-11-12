@@ -45,3 +45,9 @@
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
+
+@media print {
+  .bloomy-background .bloom {
+    display: none !important;
+  }
+}
