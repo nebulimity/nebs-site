@@ -162,7 +162,7 @@ h1 {
   box-shadow: 0 0px 18px rgb(var(--accent));
 }
 
-@media (prefers-color-scheme: dark) {
+@media screen and (prefers-color-scheme: dark) {
   :root {
     --surface: 11 12 13;
     --on-surface: 220 224 230;
@@ -196,7 +196,7 @@ h1 {
   }
 }
 
-@media (max-width: 660px) {
+@media screen and (max-width: 660px) {
   .big-text {
     font-size: 80px;
   }
