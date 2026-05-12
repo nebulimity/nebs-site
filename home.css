@@ -38,8 +38,6 @@
 
 .label {
   display: block;
-  text-transform: uppercase;
-  letter-spacing: 2px;
   font-size: 0.8rem;
   opacity: 0.5;
   margin-bottom: 8px;

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -16,6 +16,11 @@
     <link rel="stylesheet" href="extra-styles/blooms.css" />
 
     <title>neb's site - home</title>
+
+    <script>
+      const stored = localStorage.getItem("theme");
+      if (stored) document.documentElement.style.colorScheme = stored;
+    </script>
   </head>
   <body class="bloomy-background">
     <nav class="glass">
@@ -24,6 +29,10 @@
       <a class="glass" href="">Tools</a>
       <a class="glass" href="">Games</a>
       <a class="glass" href="">About</a>
+
+      <a id="theme-toggle" class="glass" role="button" aria-label="Toggle theme">
+        <img src="images/sun.svg" alt="" />
+      </a>
     </nav>
 
     <main class="hero">
@@ -38,7 +47,7 @@
 
     <section class="content-below" id="featured-project">
       <div class="project-card">
-        <span class="label">Featured Project</span>
+        <p class="label">featured project</p>
         <h2 class="project-title">btd5-restored</h2>
 
         <div class="image-frame">
@@ -57,4 +66,5 @@
 
   <script src="scripts/randomText.js"></script>
   <script src="scripts/generateBlooms.js"></script>
+  <script src="scripts/toggleTheme.js"></script>
 </html>

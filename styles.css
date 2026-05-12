@@ -8,8 +8,8 @@
   --dots: light-dark(rgb(200, 200, 200), rgb(41, 41, 41));
   --bright: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));
 
-  --glass: light-dark(rgba(100, 100, 100, 0.1), rgba(255, 255, 255, 0.02));
-  --glass-outline: light-dark(rgba(0, 0, 0, 0.03), rgba(255, 255, 255, 0.03));
+  --glass: light-dark(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.02));
+  --glass-outline: light-dark(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.03));
 
   --radius: 12px;
   --transition-fast: 160ms;
@@ -69,6 +69,8 @@ nav a {
   text-decoration: none;
   cursor: pointer;
 
+  height: 43px;
+
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -93,4 +95,16 @@ nav a {
 
   display: inline-block;
   margin-bottom: 20px;
+}
+
+#theme-toggle {
+  padding: 8px;
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+#theme-toggle img {
+  width: 25px;
+  height: 25px;
+  display: block;
 }

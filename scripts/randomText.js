@@ -1,6 +1,6 @@
 const messages = [
   "this is \n a website \n i think",
-  "i make \n games \n and stuff",
+  // "i make \n games \n and stuff",
   "text 1 \n text 2 \n text 3",
   "hi",
   "welcome",
