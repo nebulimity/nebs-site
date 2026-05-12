@@ -1,0 +1,89 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  text-align: center;
+}
+
+.spacer {
+  flex: 1;
+}
+
+#home-text {
+  white-space: pre-line;
+  padding: 0 20px;
+  font-size: 10vh;
+}
+
+.button-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-below {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+}
+
+.project-card {
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+}
+
+.label {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  opacity: 0.5;
+  margin-bottom: 8px;
+}
+
+.project-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  background: var(--bright);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.image-frame {
+  line-height: 0;
+  border-radius: 16px;
+  overflow: hidden;
+
+  border: 1px solid var(--glass-outline);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.image-frame:hover {
+  transform: translateY(-5px);
+}
+
+.image-frame img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.view-project {
+  display: inline-block;
+  margin-top: 30px;
+  color: var(--bright);
+  text-decoration: none;
+  font-weight: 500;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.view-project:hover {
+  opacity: 1;
+}

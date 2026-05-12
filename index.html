@@ -3,48 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="home.css" />
     <link rel="stylesheet" href="extra-styles/blooms.css" />
 
-    <title>tiawit - home</title>
+    <title>neb's site - home</title>
   </head>
   <body class="bloomy-background">
-    <nav>
-      <a class="nav-button" href="/">Home</a>
-      <a class="nav-button" href="/page-1/">Page 1</a>
-      <a class="nav-button" href="">Page 2</a>
-      <a class="nav-button" href="/about/">About</a>
+    <nav class="glass">
+      <a class="glass" href="/">Home</a>
+      <a class="glass" href="">Projects</a>
+      <a class="glass" href="">Tools</a>
+      <a class="glass" href="">Games</a>
+      <a class="glass" href="">About</a>
     </nav>
-    <section class="large">
-      <div class="flex">
-        <h1 class="big-text flex-content">
-          this is <br />
-          a website <br />
-          i think
-        </h1>
+
+    <main class="hero">
+      <div class="spacer"></div>
+
+      <h1 id="home-text"></h1>
+
+      <div class="button-wrapper">
+        <a class="btn" href="#featured-project">okay cool</a>
       </div>
-      <a class="button" href="#get-started">Get Started</a>
-    </section>
-    <section id="get-started" class="container">
-      <div class="flex">
-        <div class="card flex-content">flex is cool</div>
-        <div class="card flex-content">flex is cool</div>
+    </main>
+
+    <section class="content-below" id="featured-project">
+      <div class="project-card">
+        <span class="label">Featured Project</span>
+        <h2 class="project-title">btd5-restored</h2>
+
+        <div class="image-frame">
+          <img src="images/btd5-restored-gameplay.webp" alt="btd5-restored gameplay" />
+        </div>
+
+        <a href="" class="view-project">More about btd5-restored →</a>
       </div>
-      <div class="card">yo</div>
-      <div class="card">yo</div>
-      <div class="card">yo</div>
-      <div class="card">yo</div>
     </section>
+
     <footer>
-      <a class="button-dark" href="#">back to top</a>
-      <p>© 2025 WebsiteCompany. All Rights Reserved.</p>
+      <a class="btn-dark glass" href="#">back to top</a>
+      <p>© 2026 nebulimity. All Rights Reserved.</p>
     </footer>
   </body>
+
+  <script src="scripts/randomText.js"></script>
   <script src="scripts/generateBlooms.js"></script>
 </html>
