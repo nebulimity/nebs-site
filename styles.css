@@ -18,7 +18,7 @@
 
 .glass {
   background: var(--glass);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(12px);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
   border: 1px solid var(--glass-outline);
 }
