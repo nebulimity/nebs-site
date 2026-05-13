@@ -1,15 +1,15 @@
 :root {
   color-scheme: light dark;
 
-  --surface: light-dark(rgb(255 255 255), rgb(11 12 13));
+  --surface: light-dark(rgb(248 250 252), rgb(11 12 13));
   --on-surface: light-dark(rgb(15 23 42), rgb(220 224 230));
   --muted: light-dark(rgb(100 116 139), rgb(148 163 184));
   --accent: light-dark(rgb(99 102 241), rgb(96 165 250));
-  --dots: light-dark(rgb(200, 200, 200), rgb(41, 41, 41));
+  --dots: light-dark(rgb(225, 228, 232), rgb(41, 41, 41));
   --bright: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));
 
-  --glass: light-dark(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.02));
-  --glass-outline: light-dark(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.03));
+  --glass: light-dark(rgba(248 250 252, 0.5), rgba(255, 255, 255, 0.02));
+  --glass-outline: light-dark(rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.03));
 
   --radius: 12px;
   --transition-fast: 160ms;

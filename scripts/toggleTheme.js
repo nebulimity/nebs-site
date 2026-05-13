@@ -7,7 +7,7 @@ function effectiveTheme() {
 }
 
 function updateIcon() {
-  icon.src = effectiveTheme() === "dark" ? "images/sun.svg" : "images/moon.svg";
+  icon.src = effectiveTheme() === "dark" ? "/images/sun.svg" : "/images/moon.svg";
 }
 
 toggle.addEventListener("click", () => {

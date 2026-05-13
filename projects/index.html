@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="projects.css" />
+
+    <title>neb's site - projects</title>
+
+    <script>
+      const stored = localStorage.getItesm("theme");
+      if (stored) document.documentElement.style.colorScheme = stored;
+    </script>
+  </head>
+  <body>
+    <nav class="glass">
+      <a class="glass" href="/">Home</a>
+      <a class="glass" href="/projects/">Projects</a>
+      <a class="glass" href="">Tools</a>
+      <a class="glass" href="">Games</a>
+      <a class="glass" href="">About</a>
+
+      <a id="theme-toggle" class="glass" role="button" aria-label="Toggle theme">
+        <img src="/images/sun.svg" alt="" />
+      </a>
+    </nav>
+
+    <header>
+      <h1>my projects</h1>
+    </header>
+  </body>
+  <script src="/scripts/toggleTheme.js"></script>
+</html>

@@ -4,6 +4,7 @@ const messages = [
   "text 1 \n text 2 \n text 3",
   "hi",
   "welcome",
+  // "my \n portfolio",
 ];
 
 const randomIndex = Math.floor(Math.random() * messages.length);

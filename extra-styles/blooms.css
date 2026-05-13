@@ -28,6 +28,10 @@
   will-change: transform, opacity;
 }
 
+html[style*="color-scheme: light"] .bloomy-background .bloom {
+  mix-blend-mode: multiply;
+}
+
 @keyframes bloomPulse {
   0%,
   100% {
