@@ -30,7 +30,7 @@
 }
 
 html {
-  font-family: "Inter", sans-serif;
+  font-family: "sohne", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -107,4 +107,25 @@ nav a {
   width: 25px;
   height: 25px;
   display: block;
+}
+
+@font-face {
+  font-family: sohne;
+  src: url(fonts/sohne-300-normal.woff) format("woff");
+  font-weight: 300;
+}
+@font-face {
+  font-family: sohne;
+  src: url(fonts/sohne-400-normal.woff) format("woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: sohne;
+  src: url(fonts/sohne-500-normal.woff) format("woff");
+  font-weight: 500;
+}
+@font-face {
+  font-family: sohne;
+  src: url(fonts/sohne-700-normal.woff) format("woff");
+  font-weight: 700;
 }
