@@ -105,7 +105,7 @@ header h1 {
   color: #4ade80;
 }
 .status-badge.maintained {
-  background: rgba(40, 138, 230, 0.5);
+  background: rgba(29, 98, 163, 0.5);
   color: #4ac0de;
 }
 .status-badge.paused {
