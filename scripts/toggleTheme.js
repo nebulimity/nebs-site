@@ -7,7 +7,7 @@ function getTheme() {
 }
 
 function updateIcon() {
-  icon.src = getTheme() === "dark" ? "/images/sun.svg" : "/images/moon.svg";
+  icon.src = getTheme() === "dark" ? "/images/dark/sun.svg" : "/images/light/moon.svg";
 }
 
 toggle.addEventListener("click", () => {
