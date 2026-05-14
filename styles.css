@@ -10,6 +10,7 @@
 
   --glass: light-dark(rgba(248, 250, 252, 0.5), rgba(255, 255, 255, 0.02));
   --glass-outline: light-dark(rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.03));
+  --glass-outline-bright: light-dark(rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.1));
 
   --radius: 12px;
   --transition-fast: 160ms;
@@ -21,8 +22,8 @@
   backdrop-filter: blur(12px) brightness(0.9);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
   border: 1px solid var(--glass-outline);
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid var(--glass-outline-bright);
+  border-bottom: 1px solid var(--glass-outline-bright);
 }
 
 * {
